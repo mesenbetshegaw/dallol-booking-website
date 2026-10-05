@@ -1,0 +1,883 @@
+CRITICAL - 2026-10-02 18:12:07 --> ErrorException: require_once(/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/ThirdParty/Kint/init.php): Failed to open stream: No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH/Autoloader/Autoloader.php on line 548.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(548): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(548): require_once()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(520): CodeIgniter\Autoloader\Autoloader->autoloadKint()
+ 4 SYSTEMPATH/Boot.php(385): CodeIgniter\Autoloader\Autoloader->initializeKint()
+ 5 SYSTEMPATH/Boot.php(160): CodeIgniter\Boot::initializeKint()
+ 6 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-10-02 21:22:13 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres" in /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(78): pg_connect()
+#2 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/CLI/Commands.php(72): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Boot.php(444): CodeIgniter\CLI\Console->run()
+#9 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+CRITICAL - 2026-10-02 21:22:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+[Method: CLI, Route: db:table/hotels]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(72): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 5 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 6 SYSTEMPATH/Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 8 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-10-02 21:22:20 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres" in /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(78): pg_connect()
+#2 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/CLI/Commands.php(72): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Boot.php(444): CodeIgniter\CLI\Console->run()
+#9 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+CRITICAL - 2026-10-02 21:22:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+[Method: CLI, Route: db:table/hotels]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/CLI/Commands.php(72): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 5 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 6 SYSTEMPATH/Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 8 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-10-02 21:28:47 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:28:47 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:28:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:28:47 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+ERROR - 2026-10-02 21:28:52 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:28:52 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:28:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:28:52 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/HotelModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+ERROR - 2026-10-02 21:30:21 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:30:21 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:30:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:30:21 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+ERROR - 2026-10-02 21:32:05 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:32:05 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:32:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:32:05 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+ERROR - 2026-10-02 21:32:11 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:32:11 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:32:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:32:11 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 3: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/HotelModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/HomeController.php(13): App\Models\HotelModel->getFeatured()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Parser\Parser::__construct(): Implicitly marking parameter $caller as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Parser/Parser.php on line 75.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Parser/Parser.php')
+ 3 VENDORPATH/kint-php/kint/src/Kint.php(345): Composer\Autoload\ClassLoader->loadClass('Kint\\Parser\\Parser')
+ 4 VENDORPATH/kint-php/kint/src/Kint.php(560): Kint\Kint::createFromStatics([...])
+ 5 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 6 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+10 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+11 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Parser\Parser::setCallerClass(): Implicitly marking parameter $caller as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Parser/Parser.php on line 86.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Parser/Parser.php')
+ 3 VENDORPATH/kint-php/kint/src/Kint.php(345): Composer\Autoload\ClassLoader->loadClass('Kint\\Parser\\Parser')
+ 4 VENDORPATH/kint-php/kint/src/Kint.php(560): Kint\Kint::createFromStatics([...])
+ 5 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 6 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+10 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+11 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Value::addRepresentation(): Implicitly marking parameter $pos as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Value.php on line 65.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Value.php')
+ 3 VENDORPATH/kint-php/kint/src/Kint.php(398): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Value')
+ 4 VENDORPATH/kint-php/kint/src/Kint.php(574): Kint\Kint::getBasesFromParamInfo([...], 1)
+ 5 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 6 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+10 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+11 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Value::replaceRepresentation(): Implicitly marking parameter $pos as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Value.php on line 84.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Value.php')
+ 3 VENDORPATH/kint-php/kint/src/Kint.php(398): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Value')
+ 4 VENDORPATH/kint-php/kint/src/Kint.php(574): Kint\Kint::getBasesFromParamInfo([...], 1)
+ 5 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 6 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+10 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+11 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Value::blank(): Implicitly marking parameter $name as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Value.php on line 237.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Value.php')
+ 3 VENDORPATH/kint-php/kint/src/Kint.php(398): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Value')
+ 4 VENDORPATH/kint-php/kint/src/Kint.php(574): Kint\Kint::getBasesFromParamInfo([...], 1)
+ 5 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 6 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+10 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+11 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Value::blank(): Implicitly marking parameter $access_path as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Value.php on line 237.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Value.php')
+ 3 VENDORPATH/kint-php/kint/src/Kint.php(398): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Value')
+ 4 VENDORPATH/kint-php/kint/src/Kint.php(574): Kint\Kint::getBasesFromParamInfo([...], 1)
+ 5 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 6 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 7 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 8 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 9 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+10 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+11 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Representation\Representation::__construct(): Implicitly marking parameter $name as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Representation/Representation.php on line 39.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Representation/Representation.php')
+ 3 VENDORPATH/kint-php/kint/src/Parser/Parser.php(323): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Representation\\Representation')
+ 4 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 5 VENDORPATH/kint-php/kint/src/Kint.php(285): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+ 6 VENDORPATH/kint-php/kint/src/Kint.php(268): Kint\Kint->dumpVar([...], Object(Kint\Zval\Value))
+ 7 VENDORPATH/kint-php/kint/src/Kint.php(575): Kint\Kint->dumpAll([...], [...])
+ 8 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+ 9 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+10 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+11 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+12 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+13 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+14 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+15 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\BlobValue::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/BlobValue.php on line 144.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/BlobValue.php')
+ 3 VENDORPATH/kint-php/kint/src/Parser/Parser.php(285): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\BlobValue')
+ 4 VENDORPATH/kint-php/kint/src/Parser/Parser.php(142): Kint\Parser\Parser->parseString('1', Object(Kint\Zval\Value))
+ 5 VENDORPATH/kint-php/kint/src/Parser/Parser.php(387): Kint\Parser\Parser->parse('1', Object(Kint\Zval\Value))
+ 6 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 7 VENDORPATH/kint-php/kint/src/Parser/Parser.php(387): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+ 8 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 VENDORPATH/kint-php/kint/src/Kint.php(285): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 VENDORPATH/kint-php/kint/src/Kint.php(268): Kint\Kint->dumpVar([...], Object(Kint\Zval\Value))
+11 VENDORPATH/kint-php/kint/src/Kint.php(575): Kint\Kint->dumpAll([...], [...])
+12 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+13 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+14 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+15 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+16 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+17 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+18 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+19 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Representation\ColorRepresentation::getColor(): Implicitly marking parameter $variant as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Representation/ColorRepresentation.php on line 214.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Representation/ColorRepresentation.php')
+ 3 VENDORPATH/kint-php/kint/src/Parser/ColorPlugin.php(53): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Representation\\ColorRepresentation')
+ 4 VENDORPATH/kint-php/kint/src/Parser/Parser.php(636): Kint\Parser\ColorPlugin->parse('1', Object(Kint\Zval\BlobValue), 2)
+ 5 VENDORPATH/kint-php/kint/src/Parser/Parser.php(297): Kint\Parser\Parser->applyPlugins('1', Object(Kint\Zval\BlobValue), 2)
+ 6 VENDORPATH/kint-php/kint/src/Parser/Parser.php(142): Kint\Parser\Parser->parseString('1', Object(Kint\Zval\Value))
+ 7 VENDORPATH/kint-php/kint/src/Parser/Parser.php(387): Kint\Parser\Parser->parse('1', Object(Kint\Zval\Value))
+ 8 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 VENDORPATH/kint-php/kint/src/Parser/Parser.php(387): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+11 VENDORPATH/kint-php/kint/src/Kint.php(285): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+12 VENDORPATH/kint-php/kint/src/Kint.php(268): Kint\Kint->dumpVar([...], Object(Kint\Zval\Value))
+13 VENDORPATH/kint-php/kint/src/Kint.php(575): Kint\Kint->dumpAll([...], [...])
+14 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+15 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+16 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+17 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+18 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+19 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+20 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+21 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+24 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+WARNING - 2026-10-02 21:42:56 --> [DEPRECATED] Kint\Zval\Representation\ColorRepresentation::hasAlpha(): Implicitly marking parameter $variant as nullable is deprecated, the explicit nullable type must be used instead in VENDORPATH/kint-php/kint/src/Zval/Representation/ColorRepresentation.php on line 278.
+ 1 VENDORPATH/composer/ClassLoader.php(576): include('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Debug/Exceptions.php')
+ 2 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/composer/../kint-php/kint/src/Zval/Representation/ColorRepresentation.php')
+ 3 VENDORPATH/kint-php/kint/src/Parser/ColorPlugin.php(53): Composer\Autoload\ClassLoader->loadClass('Kint\\Zval\\Representation\\ColorRepresentation')
+ 4 VENDORPATH/kint-php/kint/src/Parser/Parser.php(636): Kint\Parser\ColorPlugin->parse('1', Object(Kint\Zval\BlobValue), 2)
+ 5 VENDORPATH/kint-php/kint/src/Parser/Parser.php(297): Kint\Parser\Parser->applyPlugins('1', Object(Kint\Zval\BlobValue), 2)
+ 6 VENDORPATH/kint-php/kint/src/Parser/Parser.php(142): Kint\Parser\Parser->parseString('1', Object(Kint\Zval\Value))
+ 7 VENDORPATH/kint-php/kint/src/Parser/Parser.php(387): Kint\Parser\Parser->parse('1', Object(Kint\Zval\Value))
+ 8 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 VENDORPATH/kint-php/kint/src/Parser/Parser.php(387): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 VENDORPATH/kint-php/kint/src/Parser/Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+11 VENDORPATH/kint-php/kint/src/Kint.php(285): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+12 VENDORPATH/kint-php/kint/src/Kint.php(268): Kint\Kint->dumpVar([...], Object(Kint\Zval\Value))
+13 VENDORPATH/kint-php/kint/src/Kint.php(575): Kint\Kint->dumpAll([...], [...])
+14 SYSTEMPATH/Debug/Toolbar.php(112): Kint\Kint::dump([...])
+15 SYSTEMPATH/Debug/Toolbar.php(390): CodeIgniter\Debug\Toolbar->run(1790966575.901862, 0.1561, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+16 SYSTEMPATH/Filters/DebugToolbar.php(44): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+17 SYSTEMPATH/Filters/Filters.php(278): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+18 SYSTEMPATH/Filters/Filters.php(364): CodeIgniter\Filters\Filters->runAfter([...])
+19 SYSTEMPATH/CodeIgniter.php(416): CodeIgniter\Filters\Filters->runRequired('after')
+20 SYSTEMPATH/CodeIgniter.php(377): CodeIgniter\CodeIgniter->runRequiredAfterFilters(Object(CodeIgniter\Filters\Filters))
+21 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+24 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-10-02 21:52:37 --> TypeError: CodeIgniter\Database\BaseBuilder::setBind(): Argument #1 ($key) must be of type string, int given, called in /home/abebe/Documents/dallolbook/dallolbookingall/booking_website/vendor/codeigniter4/framework/system/Database/BaseBuilder.php on line 1585
+[Method: POST, Route: otp/send]
+in SYSTEMPATH/Database/BaseBuilder.php on line 3570.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseBuilder->setBind()
+ 2 SYSTEMPATH/Model.php(399): CodeIgniter\Database\BaseBuilder->set()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(711): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/OtpModel.php(26): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Web/AuthWebController.php(107): App\Models\OtpModel->generate()
+ 7 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\AuthWebController->otpSend()
+ 8 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-02 21:53:39 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:39 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:39 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-02 21:53:44 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:44 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:44 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-02 21:53:46 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:46 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:53:46 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-02 21:54:05 --> pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:54:05 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 863.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 4 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:54:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 212.
+ 1 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 6 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+CRITICAL - 2026-10-02 21:54:05 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;TRUE&quot; does not exist
+LINE 4: ...ON &quot;hi&quot;.&quot;hotel_id&quot; = &quot;h&quot;.&quot;id&quot; AND &quot;hi&quot;.&quot;is_primary&quot; = &quot;TRUE&quot;
+                                                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(200): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/BookingModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Web/DashboardController.php(30): App\Models\BookingModel->getUserBookings()
+ 8 SYSTEMPATH/CodeIgniter.php(974): App\Controllers\Web\DashboardController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(24): CodeIgniter\Boot::bootWeb()
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abebe/Documents/dallolbook/dallolbookingall/booking_website/public/index.php')
+DEBUG - 2026-10-02 21:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-02 21:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

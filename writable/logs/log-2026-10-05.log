@@ -1,0 +1,810 @@
+ERROR - 2026-10-05 16:11:33 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:11:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:11:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:11:33 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+ERROR - 2026-10-05 16:11:59 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:11:59 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:11:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:11:59 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:14:03 --> CodeIgniter\Exceptions\InvalidArgumentException: Unable to locate the seeds directory. Please check Config\Database::filesPath
+[Method: CLI, Route: db:seed]
+in SYSTEMPATH\Database\Seeder.php on line 90.
+ 1 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 2 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([])
+ 3 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [])
+ 4 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 5 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 6 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-10-05 16:14:33 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:14:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:14:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 16:14:33 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+DEBUG - 2026-10-05 16:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 16:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-05 18:23:26 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:23:26 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:23:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:23:26 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+ERROR - 2026-10-05 18:23:48 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:23:48 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:23:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:23:48 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+DEBUG - 2026-10-05 18:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-05 18:30:04 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 5 APPPATH\Controllers\Admin\SuperAdminController.php(61): App\Controllers\Admin\SuperAdminController->cities()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->subAdmins()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:04 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+[Method: GET, Route: admin/super/sub-admins]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 3 APPPATH\Controllers\Admin\SuperAdminController.php(61): App\Controllers\Admin\SuperAdminController->cities()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->subAdmins()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 5 APPPATH\Controllers\Admin\SuperAdminController.php(61): App\Controllers\Admin\SuperAdminController->cities()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->subAdmins()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:04 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 7 APPPATH\Controllers\Admin\SuperAdminController.php(61): App\Controllers\Admin\SuperAdminController->cities()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->subAdmins()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+DEBUG - 2026-10-05 18:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-05 18:30:24 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 5 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:24 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+[Method: GET, Route: admin/super/hotels]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 3 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 5 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:24 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 7 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+DEBUG - 2026-10-05 18:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-05 18:30:49 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 5 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:49 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+[Method: GET, Route: admin/super/hotels]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 3 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 5 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:30:49 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT name FROM cities WHERE is_active=TRUE ORDER BY name A...
+                         ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT name FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Admin\SuperAdminController.php(228): App\Models\CityModel->getNames()
+ 7 APPPATH\Controllers\Admin\SuperAdminController.php(154): App\Controllers\Admin\SuperAdminController->cities()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SuperAdminController->hotels()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuperAdminController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+ERROR - 2026-10-05 18:31:12 --> pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:31:12 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:31:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 18:31:12 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;cities&quot; does not exist
+LINE 1: SELECT id, name, region FROM cities WHERE is_active=TRUE ORD...
+                                     ^', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 5 APPPATH\Models\CityModel.php(27): CodeIgniter\Database\BaseConnection->query('SELECT id, name, region FROM cities WHERE is_active=TRUE ORDER BY name ASC')
+ 6 APPPATH\Controllers\Web\HomeController.php(19): App\Models\CityModel->getActive()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Web\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Web\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+DEBUG - 2026-10-05 18:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 18:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-10-05 19:50:13 --> pg_query(): Query failed: ERROR:  insert or update on table &quot;hotel_managers&quot; violates foreign key constraint &quot;hotel_managers_broker_id_fkey&quot;
+DETAIL:  Key (broker_id)=(10) is not present in table &quot;brokers&quot;.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 3 APPPATH\Models\HotelManagerModel.php(84): CodeIgniter\Database\BaseConnection->query('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\Admin\SubAdminController.php(367): App\Models\HotelManagerModel->assignManager(11, 37, 10, 2)
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SubAdminController->assignManager(37)
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SubAdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 19:50:13 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  insert or update on table &quot;hotel_managers&quot; violates foreign key constraint &quot;hotel_managers_broker_id_fkey&quot;
+DETAIL:  Key (broker_id)=(10) is not present in table &quot;brokers&quot;.
+[Method: POST, Route: admin/subadmin/hotels/37/assign-manager]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 APPPATH\Models\HotelManagerModel.php(84): CodeIgniter\Database\BaseConnection->query('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\Admin\SubAdminController.php(367): App\Models\HotelManagerModel->assignManager(11, 37, 10, 2)
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SubAdminController->assignManager(37)
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SubAdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 19:50:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  insert or update on table &quot;hotel_managers&quot; violates foreign key constraint &quot;hotel_managers_broker_id_fkey&quot;
+DETAIL:  Key (broker_id)=(10) is not present in table &quot;brokers&quot;.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 3 APPPATH\Models\HotelManagerModel.php(84): CodeIgniter\Database\BaseConnection->query('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\Admin\SubAdminController.php(367): App\Models\HotelManagerModel->assignManager(11, 37, 10, 2)
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SubAdminController->assignManager(37)
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SubAdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+CRITICAL - 2026-10-05 19:50:13 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;hotel_managers&quot; violates foreign key constraint &quot;hotel_managers_broker_id_fkey&quot;
+DETAIL:  Key (broker_id)=(10) is not present in table &quot;brokers&quot;.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  insert or update on table &quot;hotel_managers&quot; violates foreign key constraint &quot;hotel_managers_broker_id_fkey&quot;
+DETAIL:  Key (broker_id)=(10) is not present in table &quot;brokers&quot;.', 'C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\vendor\\codeigniter4\\framework\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 4 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (11, 37, 10, 2)')
+ 5 APPPATH\Models\HotelManagerModel.php(84): CodeIgniter\Database\BaseConnection->query('INSERT INTO hotel_managers (admin_id, hotel_id, broker_id, sub_admin_id)
+             VALUES (?, ?, ?, ?)', [...])
+ 6 APPPATH\Controllers\Admin\SubAdminController.php(367): App\Models\HotelManagerModel->assignManager(11, 37, 10, 2)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Admin\SubAdminController->assignManager(37)
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SubAdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(24): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\mmese\\Documents\\messi folder\\software folder\\dallolbookingall\\dallolbookingall\\booking_website\\public\\index.php')
+DEBUG - 2026-10-05 19:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 19:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-10-05 20:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
